@@ -8,7 +8,7 @@ function Login({ onLoginSuccess }) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    axios.post('https://dolphin-app-34zk3.ondigitalocean.app/login', { email, password })
+    axios.post('https://backend-app-zcls4.ondigitalocean.app/login', { email, password })
       .then(res => {
         console.log(res);
         if (res.data === "Login Successfully") {
