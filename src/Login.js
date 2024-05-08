@@ -26,6 +26,7 @@ function Login({ onLoginSuccess }) {
   return (
     <div className='d-flex vh-100 justify-content-center align-items-center'>
       <div className='p-3 bg-white w-25'>
+        <h3>Bienvenido a DigitalOcean</h3>
         <form onSubmit={handleSubmit}>
           <div className='mb-3'>
             <label htmlFor="email">Email</label>

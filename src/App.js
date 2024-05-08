@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Login from './Login';
-import HomePage from './HomePage'; // Importa el componente HomePage
+import HomePage from './HomePage';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
