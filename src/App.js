@@ -9,9 +9,13 @@ function App() {
     setIsLoggedIn(true);
   }
 
+  function handleLogout() {
+    setIsLoggedIn(false);
+  }
+
   return (
     <div>
-      {isLoggedIn ? <HomePage /> : <Login onLoginSuccess={handleLoginSuccess} />}
+      {isLoggedIn ? <HomePage onLogout={handleLogout} /> : <Login onLoginSuccess={handleLoginSuccess} />}
     </div>
   );
 }
