@@ -4,7 +4,7 @@ function HomePage() {
   return (
     <div>
       <h1>Welcome to the HomePage!</h1>
-      {/* Agrega aquí el contenido de tu página de inicio */}
+      <button onClick={onLogout} className="btn btn-danger">Cerrar Sesión</button>
     </div>
   );
 }
